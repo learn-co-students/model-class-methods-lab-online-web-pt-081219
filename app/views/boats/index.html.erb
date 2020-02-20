@@ -1,0 +1,24 @@
+
+
+
+<h1>All Boats</h1>
+<% @boats.each do |boat| %>
+  <div>
+    <h2><%= boat.name %></h2>
+   <% end %>
+  </div>
+ <h1>Non Sailboats</h1>
+  <% @last.each do |boat| %>
+  <div>
+    <h2><%= boat.name %></h2>
+  
+  </div>
+  <% end %>
+  <h1>No Captain</h1>
+  <% @nocapt.each do |boat|%>
+  <h2><%= boat.name %></h2>
+  
+
+<% end %>
+<h1>Longest Boat</h1>
+<%= @boats.longest.name%>
